@@ -46,3 +46,11 @@ body {
     color: #5F5F5F;
     background-color: #141414;
 }
+
+.footer {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+}
