@@ -161,8 +161,6 @@ body {
     .clock {
         display: flex;
         flex-direction: column;
-        margin-top: 24px;
-        margin-bottom: 0px;
         width: 100%;
     }
 
