@@ -1,4 +1,3 @@
-// const maxCountdownTime = 600;
 let countdownTime = 600;
 let countdownInterval;
 let timerDisplay;
@@ -17,7 +16,6 @@ function updateTimer() {
     let minutes = Math.floor(countdownTime / 60);
     let seconds = countdownTime % 60;
 
-    // Display the remaining time in the 'timer' div
     timerDisplay.innerHTML = (minutes < 10 ? `0${minutes}` : minutes) + ':' + (seconds < 10 ? `0${seconds}` : seconds);
     startButton.disabled = true;
     pauseButton.disabled = false;
@@ -33,11 +31,9 @@ function updateTimer() {
 function startCountdown() {
     timerDisplay = document.getElementById('timer');
 
-    // Call updateTimer once immediately to display the initial time
     updateTimer();
 
-    // Start the countdown timer
-    countdownInterval = setInterval(updateTimer, 1000); // Update the timer every second
+    countdownInterval = setInterval(updateTimer, 1000);
     resetButton.disabled = true;
     addOneSecond.disabled = true;
     addTenSeconds.disabled = true;
