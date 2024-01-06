@@ -115,6 +115,7 @@ body {
         border: none;
         border-radius: 8px;
         width: 100%;
+        transition: all 0.3s ease;
     }
 
     .primaryButton:hover {
@@ -123,6 +124,7 @@ body {
 
     .primaryButton:active {
         background-color: #CCCCCC;
+        transform: scale(0.9);
     }
 
     .primaryButton:disabled {
@@ -144,6 +146,7 @@ body {
         border: none;
         border-radius: 8px;
         width: 100%;
+        transition: all 0.3s ease;
     }
 
     .secondaryButton:hover {
@@ -152,6 +155,7 @@ body {
 
     .secondaryButton:active {
         background-color: #525252;
+        transform: scale(0.9);
     }
 
     .secondaryButton:disabled {
