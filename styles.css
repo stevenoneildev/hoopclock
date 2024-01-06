@@ -1,12 +1,29 @@
-button {
-    appearance: none;
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    color: inherit;
-    cursor: pointer;
+/* Reset Safari iOS styles */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+    /* Reset form elements */
+    input,
+    select,
+    textarea,
+    button {
+        appearance: auto !important;
+    }
+
+    /* Reset hyperlink styles */
+    a {
+        text-decoration: underline !important;
+        color: #007aff !important;
+    }
+
+    /* Reset font smoothing */
+    body {
+        -webkit-font-smoothing: auto !important;
+    }
+
+    /* Reset overscroll behavior */
+    * {
+        overscroll-behavior: auto !important;
+    }
 }
 
 
