@@ -20,39 +20,50 @@
 </head>
 
 <body>
-    <div class="clock">
-        <p class="mono-large" id="timer">10:00</p>
-        <div class="clockControls">
-            <button id="startButton" class="button">Start</button>
-            <button id="pauseButton" class="button" disabled>Pause</button>
-            <button id="resetButton" class="button" disabled>Reset</button>
-            <!-- <button id="addOneSecond" class="button" disabled>+1s</button>
-            <button id="addTenSeconds" class="button" disabled>+10s</button>
-            <button id="addSixtySeconds" class="button" disabled>+60s</button>
-            <button id="subtractOneSecond" class="button" disabled>-1s</button>
-            <button id="subtractTenSeconds" class="button" disabled>-10s</button>
-            <button id="subtractSixtySeconds" class="button" disabled>-60s</button> -->
-        </div>
+    <div class="mainWrapper">
         <div class="scoreboard">
             <div class="team">
                 <p id="homeScore" class="mono-large">0</p>
                 <p class="mono-small">Home</p>
-                <button id="homeAddOnePoint" class="button">+1</button>
-                <button id="homeAddTwoPoints" class="button">+2</button>
-                <button id="homeAddThreePoints" class="button">+3</button>
-                <button id="homeSubtractOnePoint" class="button" disabled>-1</button>
+                <div class="pointControls">
+                    <button id="homeAddOnePoint" class="button">+1</button>
+                    <button id="homeAddTwoPoints" class="button">+2</button>
+                    <button id="homeAddThreePoints" class="button">+3</button>
+                    <button id="homeSubtractOnePoint" class="button" disabled>-1</button>
+                </div>
+
             </div>
             <div class="team">
                 <p id="awayScore" class="mono-large">0</p>
                 <p class="mono-small">Away</p>
-                <button id="awayAddOnePoint" class="button">+1</button>
-                <button id="awayAddTwoPoints" class="button">+2</button>
-                <button id="awayAddThreePoints" class="button">+3</button>
-                <button id="awaySubtractOnePoint" class="button" disabled>-1</button>
+                <div class="pointControls">
+                    <button id="awayAddOnePoint" class="button">+1</button>
+                    <button id="awayAddTwoPoints" class="button">+2</button>
+                    <button id="awayAddThreePoints" class="button">+3</button>
+                    <button id="awaySubtractOnePoint" class="button" disabled>-1</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="clock">
+            <p class="mono-large" id="timer">10:00</p>
+            <div class="clockControls">
+                <div class="timeControls">
+                    <button id="startButton" class="button">Start</button>
+                    <button id="pauseButton" class="button" disabled>Pause</button>
+                    <button id="resetButton" class="button" disabled>Reset</button>
+                </div>
+                <div class="secondControls">
+                    <button id="addOneSecond" class="button" disabled>+1s</button>
+                    <button id="addTenSeconds" class="button" disabled>+10s</button>
+                    <button id="addSixtySeconds" class="button" disabled>+60s</button>
+                    <button id="subtractOneSecond" class="button" disabled>-1s</button>
+                    <button id="subtractTenSeconds" class="button" disabled>-10s</button>
+                    <button id="subtractSixtySeconds" class="button" disabled>-60s</button>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="clock.js"></script>
     <script src="score.js"></script>
 </body>

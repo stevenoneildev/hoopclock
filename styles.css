@@ -2,13 +2,92 @@ body {
     background-color: black;
 }
 
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.clockControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.timeControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.secondControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.pointControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .mono-large {
     font-family: "Space Mono", monospace;
     font-size: 64px;
     line-height: 64px;
     color: white;
     margin-top: 0px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .mono-small {
@@ -17,6 +96,7 @@ body {
     line-height: 24px;
     color: white;
     margin-top: 0px;
+    margin-bottom: 24px;
 }
 
 .button {
@@ -24,6 +104,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin-left: 4px;
+    margin-right: 4px;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 8px;
