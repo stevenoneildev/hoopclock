@@ -1,15 +1,7 @@
 body {
     background-color: black;
     margin: 0px;
-}
-
-.mainWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+    overflow: hidden;
 }
 
 .clockControls {
@@ -27,8 +19,9 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     width: 100%;
+    gap: 8px;
 }
 
 .pointControls {
@@ -39,102 +32,143 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    gap: 8px;
 }
 
 .mono-large {
     font-family: "Space Mono", monospace;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 48px;
+    line-height: 48px;
     color: white;
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .mono-small {
     font-family: "Space Mono", monospace;
-    font-size: 24px;
-    line-height: 24px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: white;
     margin-top: 0px;
-    margin-bottom: 24px;
-}
-
-.button {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 4px;
-    margin-right: 4px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: white;
-    background-color: #292929;
-    border: none;
-    border-radius: 8px;
-}
-
-.button:hover {
-    background-color: #3D3D3D;
-}
-
-.button:active {
-    background-color: #525252;
-}
-
-.button:disabled {
-    color: #5F5F5F;
-    background-color: #141414;
-}
-
-.footer {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16px;
-    color: white;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 480px) {
 
+    .mainWrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .primaryButton {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .primaryButton:hover {
+        background-color: #E5E5E5;
+    }
+
+    .primaryButton:active {
+        background-color: #CCCCCC;
+    }
+
+    .primaryButton:disabled {
+        color: #5F5F5F;
+        background-color: #141414;
+    }
+
+    .secondaryButton {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: white;
+        background-color: #292929;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .secondaryButton:hover {
+        background-color: #3D3D3D;
+    }
+
+    .secondaryButton:active {
+        background-color: #525252;
+    }
+
+    .secondaryButton:disabled {
+        color: #5F5F5F;
+        background-color: #141414;
+    }
+
     .scoreboard {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
         width: 100%;
     }
 
-    .team {
+    .digitDisplay {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 16px;
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+        background-color: #141414;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
         margin-top: 0px;
         margin-bottom: 24px;
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
     }
 
     .clock {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 24px;
         margin-bottom: 0px;
+        width: 100%;
     }
 
     .secondControls {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -143,23 +177,88 @@ body {
     .addSeconds {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
+        width: 100%;
+        gap: 8px;
     }
 
     .subtractSeconds {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 16px;
+        width: 100%;
+        gap: 8px;
     }
 
 }
 
 @media (min-width: 481px) {
 
+    .mainWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 640px;
+        height: 100vh;
+    }
+
+    .primaryButton {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .primaryButton:hover {
+        background-color: #E5E5E5;
+    }
+
+    .primaryButton:active {
+        background-color: #CCCCCC;
+    }
+
+    .primaryButton:disabled {
+        color: #5F5F5F;
+        background-color: #141414;
+    }
+
+    .secondaryButton {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: white;
+        background-color: #292929;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .secondaryButton:hover {
+        background-color: #3D3D3D;
+    }
+
+    .secondaryButton:active {
+        background-color: #525252;
+    }
+
+    .secondaryButton:disabled {
+        color: #5F5F5F;
+        background-color: #141414;
+    }
+
     .scoreboard {
         display: flex;
         flex-direction: row;
@@ -167,7 +266,17 @@ body {
         align-items: center;
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 0px;
+        margin-right: 0px;
         width: 100%;
+    }
+
+    .digitDisplay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
     }
 
     .team {
@@ -199,6 +308,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        gap: 8px;
     }
 
     .addSeconds {
@@ -206,6 +316,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 8px;
     }
 
     .subtractSeconds {
@@ -213,6 +324,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 8px;
     }
 
 }
