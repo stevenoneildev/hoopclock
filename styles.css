@@ -27,14 +27,21 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(48px); }
-  100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(48px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 body {
     background-color: black;
     margin: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .clockControls {
@@ -43,18 +50,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.timeControls {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
-    width: 100%;
-    gap: 8px;
 }
 
 .pointControls {
@@ -98,18 +93,22 @@ body {
         padding-right: 24px;
         padding-top: 24px;
         padding-bottom: 24px;
+        gap: 24px;
         animation: fadeIn 1s cubic-bezier(0.8, 0, 0.2, 1);
     }
 
     .primaryButton {
         font-family: "Space Grotesk", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        line-height: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 40px;
         color: black;
         background-color: white;
         border: none;
@@ -134,13 +133,14 @@ body {
 
     .secondaryButton {
         font-family: "Space Grotesk", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 16px;
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 8px;
         padding-bottom: 8px;
+        height: 40px;
         color: white;
         background-color: #292929;
         border: none;
@@ -171,6 +171,7 @@ body {
         margin-top: 0px;
         margin-bottom: 0px;
         width: 100%;
+        gap: 16px;
     }
 
     .digitDisplay {
@@ -192,7 +193,6 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: 0px;
-        margin-bottom: 24px;
         width: 100%;
     }
 
@@ -200,6 +200,14 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .timeControls {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 16px;
+        width: 100%;
+        gap: 8px;
     }
 
     .secondControls {
@@ -242,13 +250,14 @@ body {
 
     .primaryButton {
         font-family: "Space Grotesk", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 16px;
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 8px;
         padding-bottom: 8px;
+        height: 40px;
         color: black;
         background-color: white;
         border: none;
@@ -270,13 +279,14 @@ body {
 
     .secondaryButton {
         font-family: "Space Grotesk", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 16px;
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 8px;
         padding-bottom: 8px;
+        height: 40px;
         color: white;
         background-color: #292929;
         border: none;
@@ -335,6 +345,18 @@ body {
         align-items: center;
         margin-top: auto;
         margin-bottom: auto;
+    }
+
+    .timeControls {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        width: 100%;
+        gap: 8px;
     }
 
     .secondControls {
