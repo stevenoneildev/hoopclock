@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/web clip.png">
     <title>hoopclock</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -55,9 +56,17 @@
             </div>
             <div class="clockControls">
                 <div class="timeControls">
-                    <button id="startButton" class="primaryButton">Start</button>
-                    <button id="pauseButton" class="secondaryButton" disabled>Pause</button>
-                    <button id="resetButton" class="secondaryButton" disabled>Reset</button>
+                    <button id="startButton" class="primaryButton">
+                        Start
+                    </button>
+                    <button id="pauseButton" class="secondaryButton"
+                        style="text-transform: uppercase; letter-spacing: 0.75px;" disabled>
+                        Pause
+                    </button>
+                    <button id="resetButton" class="secondaryButton"
+                        style="text-transform: uppercase; letter-spacing: 0.75px;" disabled>
+                        Reset
+                    </button>
                 </div>
                 <div class="secondControls">
                     <div class="addSeconds">
@@ -73,7 +82,15 @@
                 </div>
             </div>
         </div>
+        <div class="actionFooter">
+            <button id="refreshButton" class="secondaryButton">Reset all</button>
+        </div>
     </div>
+    <script>
+        document.getElementById("refreshButton").addEventListener("click", function () {
+            location.reload(); // Reloads the current page
+        });
+    </script>
     <script src="clock.js"></script>
     <script src="score.js"></script>
 </body>
